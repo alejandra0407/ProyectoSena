@@ -60,7 +60,7 @@ class Permiso_persona(models.Model):
 	persona = models.ForeignKey(Persona, on_delete = models.CASCADE)
 
 	def __str__(self):
-		return self.persona.primerNombre
+		return self.persona.primerNombre+'_'+self.permiso.horaSalida+'_'+self.estado
 #=================================================#
 
 #=======================ROL=======================#
@@ -78,7 +78,7 @@ class Rol_persona(models.Model):
 
 
 	def __str__(self):
-		return self.rol.rol+'_'+self.persona.primerNombre
+		return self.persona.primerNombre+'_'+self.rol.rol
 #=================================================#
 
 #=====================PROGRAMA====================#
