@@ -1,0 +1,7 @@
+{% extends 'main/main.html' %}
+{% block titulo %}Programas{% endblock %}
+{% block contenido %}
+{% for programa in programa %}
+{{ programa }}
+{% endfor %}
+{% endblock %}

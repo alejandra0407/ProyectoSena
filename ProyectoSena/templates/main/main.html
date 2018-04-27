@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<meta charset="UTF-8">
+	
+<!-- TÍTULO -->
+	<title>{% block titulo %}{% endblock %}</title>
+<!-- FIN/TÍTULO -->
+
+</head>
+<body>
+
+<!-- BARRA DE NAVEGACIÓN -->
+<nav>
+	<ul>
+		<li><a href="{% url 'url_fichas' %}">Fichas</a></li>
+		<li><a href="{% url 'url_permisos' %}">Permisos</a></li>
+		<li><a href="{% url 'url_personas' %}">Personas</a></li>
+		<li><a href="{% url 'url_programas' %}">Programas</a></li>
+		<li><a href="{% url 'url_usuarios' %}">Usuarios</a></li>
+	</ul>
+</nav>
+<!-- FIN/BARRA DE NAVEGACIÓN -->
+
+<!-- CONTENIDO -->
+<section>
+	{% block contenido %}
+	{% endblock %}
+</section>
+<!-- FIN/CONTENIDO -->
+
+</body>
+</html>

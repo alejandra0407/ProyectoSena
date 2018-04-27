@@ -1,0 +1,7 @@
+{% extends 'main/main.html' %}
+{% block titulo %}Fichas{% endblock %}
+{% block contenido %}
+{% for ficha in ficha %}
+{{ ficha }}
+{% endfor %}
+{% endblock %}

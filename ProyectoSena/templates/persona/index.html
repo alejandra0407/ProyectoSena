@@ -1,0 +1,7 @@
+{% extends 'main/main.html' %}
+{% block titulo %}Personass{% endblock %}
+{% block contenido %}
+{% for persona in persona %}
+{{ persona }}
+{% endfor %}
+{% endblock %}
